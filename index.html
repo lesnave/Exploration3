@@ -1,0 +1,31 @@
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script>
+/*SC.initialize({
+  client_id: '8d6e4c554723831ef59331125b12a654',
+  redirect_uri: 'http://example.com/callback'
+});
+
+// initiate auth popup
+SC.connect().then(function() {
+  return SC.get('/me');
+}).then(function(me) {
+  alert('Hello, ' + me.username);
+});*/
+/*SC.initialize({
+  client_id: '8d6e4c554723831ef59331125b12a654',
+  redirect_uri: 'http://example.com/callback'
+});
+
+// update user's profile description
+SC.connect().then(function() {
+   SC.put('/me', {
+     user: { description: 'I am using the SoundCloud API!' }
+   });
+}); */
+ SC.initialize({
+            client_id: "8d6e4c554723831ef59331125b12a654",
+          });
+          SC.oEmbed("https://soundcloud.com/teamvisionary/sets/logic-under-pressure", {color: "ff0066"},
+          document.getElementById("player"));
+</script>
+
